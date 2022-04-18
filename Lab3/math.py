@@ -30,3 +30,15 @@ class rounddown:
     def roundmark(mark1):
         mark2 = round(mark1, 1)
         return mark2
+
+class markGPA:
+    def mGpa(li1, li2, num):
+        for i in range (0, num):
+            li1[i,0] = li2[i]
+        return li1
+    def inputmark(li, num):
+        for i in range (0, num):
+            li[i, 1] = input()
+            li[i, 2] = input()
+            li[i, 3] = input()
+        return li
