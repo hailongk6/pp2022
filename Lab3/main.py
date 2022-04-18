@@ -30,4 +30,12 @@ print(b.number("Course",Courselist))
 mark = float(input())
 mak = module1.roundmark(mark)
 
+marklist = np.zeros((stunum,4))
+GPAlist = np.zeros((stunum,2))
+marklist = pack.math.markGPA.mGpa(marklist, Studentlist, stunum)
+GPAlist = pack.math.markGPA.mGpa(GPAlist, Studentlist, stunum)
 
+marklist = pack.math.markGPA.inputmark(marklist, stunum)
+for i in range (0, stunum):
+     makk = int(marklist[i ,1]) + int(marklist[i ,2]) + int(marklist[i ,3])
+     GPA[i, 1] = str(makk)
